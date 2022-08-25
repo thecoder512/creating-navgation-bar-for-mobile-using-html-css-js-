@@ -1,0 +1,23 @@
+<i class="uil uil-estate"></i> Home
+
+                            <i class="uil uil-user"></i> About
+
+                            <i class="uil uil-file-alt"></i> Skills
+
+                            <i class="uil uil-briefcase-alt"></i> Services
+
+                            <i class="uil uil-scenery"></i> Portfolio
+                            <i class="uil uil-message"></i> Contact
+                <i class="uil uil-multiply nav__close" id="nav-close" ></i>
+                <i class="uil uil-bars"></i> 
+
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+
+font-family: 'Dancing Script', cursive;
+font-family: 'DynaPuff', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rubik Distressed', cursive;

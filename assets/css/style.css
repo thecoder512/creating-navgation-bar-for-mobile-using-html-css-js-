@@ -1,0 +1,163 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=DynaPuff:wght@400;500;600;700&family=Lobster&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Distressed&display=swap');
+
+:root {
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  /* Change favorite color */
+  --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+
+  /* HSL color mode */
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+}
+/*==================== BASE ====================*/
+
+*{
+  bottom: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  color: var(--text-color);
+  background-color: var(--body-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+h1,h2,h3,h4{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.header{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.container{
+  margin: 0 1.5rem 0 1.5rem;
+  max-width: 875px;
+}
+
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}
+
+.nav{
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .4s;
+}
+
+.nav__logo{
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 1px;
+}
+.nav__logo,
+.nav__toggle{
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: .4s ease;
+}
+
+.nav__logo:hover,
+.nav__toggle:hover,
+.nav__close:hover{
+  color: var(--first-color);
+}
+
+.nav__toggle{
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu{
+    position: fixed;
+    background: #fff;
+    bottom: -100%;
+    left: 0;
+    padding: 1.5rem 1.5rem 3rem;
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: .4s ease;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+  }
+
+  .nav__list{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .nav__link{
+    color: var(--text-color);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .4s ease;
+  }
+
+  .nav__link i{
+    font-size: 1.3rem;
+  }
+
+  .nav__link:hover{
+    color: var(--first-color);
+  }
+
+  .nav__close{
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1.5rem;
+    font-size: 1.4rem;
+    transition: .4s ease;
+    cursor: pointer;
+  }
+
+}
+
+
+/*  show menu  */
+
+.show-menu{
+  bottom: 0;
+}
